@@ -98,7 +98,6 @@ nav{display:flex; width:100%; height:1%; line-height:70px;
 
 
               .featuredWork1Div{width:100%; height:30%; border-style: solid; background-color:rgba(5, 5, 5); }
-              .featuredWork1TitleDiv{}
               .featuredWork1Title{color:white; margin-left:10%;}
               .priviewimageDiv{width:90%; height:95%; display:flex; margin:auto; justify-content:space-around;}
               .priviewimage{width:90%; background:black; padding:20px; background:none;}
