@@ -1,9 +1,10 @@
-*{font-family:"Barlow Semi Condensed"; margin:0; padding:0;}
+*{font-family:"Barlow Semi Condensed"; margin:0; padding:0; box-sizing: border-box;}
 
 body{ background-color: rgb(0, 0, 0);}
+
 .container{width:100%; min-height:100vh;}
 
-nav{display:flex; width:100%; height:1%; line-height:70px; 
+nav{display:flex; width:100%; height:auto; line-height:70px; 
     justify-content:space-between; background-color:rgb(10, 10, 10);
     }
 
@@ -26,23 +27,23 @@ nav{display:flex; width:100%; height:1%; line-height:70px;
 
 
 
-.wrapper{width:100%; height:min-content; margin:auto; }
+.wrapper{width:100%; min-height:min-content; margin:auto; }
 
-.main-content{
+  .main-content{
     width:70%; height:30%; display:flex; 
-    margin:auto; margin-top:10%; margin-right:18%; margin-bottom:7%;
+    margin:auto; margin-top:7%; margin-bottom:7%; 
   }
-      .photoDiv{
-        height:100%; float:left; width:25%; margin:auto; margin-top:0;
+    .photoDiv{
+      height:100%; float:left; width:25%; min-width:250px; margin:auto; margin-top:0;
+    }
+      .image{
+        width:100%; height:100%;  object-fit:contain; border-radius:100px;  
+        filter: drop-shadow(5px 2px 20px rgb(44, 16, 154)); 
       }
-        .image{
-          width:100%; height:100%; object-fit:contain; border-radius:100px;  
-          filter: drop-shadow(5px 2px 20px rgb(44, 16, 154));
-        }
 
-      .textDiv{
-        height:100%; float:right; width:75%; 
-      }
+    .textDiv{
+      height:100%; float:right; width:75%; padding-right:15%;
+    }
 
       .nameDiv{ margin-top:5%; }
         .name{color:rgb(255, 255, 255); font-size:24px; }
@@ -53,57 +54,44 @@ nav{display:flex; width:100%; height:1%; line-height:70px;
       .infoDiv{line-height:22.5px; margin-top:15px;}
         .info{font-size:17px; color:rgb(255, 255, 255);}
 
-        .contactDiv{height:10%; width:10%; display:flex; margin-top:1.5%; 
-                    border-bottom:solid; border-radius:7.5px; background-color: rgb(20,20,20);
-                    }
+      .contactDiv{display:flex; margin-top:1.5%; align-items:center;}
 
-          .emailDiv{width:47.5%; height:47.5%; padding:5%; margin:auto; }
-          .twitterDiv{width:37.5%; height:37.5%;padding:5%; margin:auto; }
-          .mailimage{width:95%; height:95%;}
-          .mailimage:hover{cursor:pointer; transition:0.2s; width:100%; height:100%;
-            filter: drop-shadow(5px 2px 20px rgb(146, 146, 146));}
-          .mailimage:active{cursor:pointer; color:rgb(109, 109, 109); transition:0.2s;
-            filter: drop-shadow(5px 2px 20px rgb(255, 255, 255));}
+        .emailDiv,.twitterDiv{margin-right:6.5px;}
+        .mailimage,.twitterimage{width:35px; height:35px;}
 
-          .twitterimage{width:95%; height:95%;}
-          .twitterimage:hover{cursor:pointer; transition:0.2s; width:100%; height:100%;
-            filter: drop-shadow(5px 2px 20px rgb(146, 146, 146));}
+      
+        .mailimage:hover{cursor:pointer; transition:0.5s; transform:scale(1.25);
+          filter: drop-shadow(5px 2px 20px rgb(146, 146, 146));}
+        .mailimage:active{cursor:pointer; color:rgb(109, 109, 109); transition:0.2s;
+          filter: drop-shadow(5px 2px 20px rgb(255, 255, 255));}
+
+        .twitterimage:hover{cursor:pointer; transition:0.5s; transform:scale(1.25);
+          filter: drop-shadow(5px 2px 20px rgb(146, 146, 146));}
           .twitterimage:active{cursor:pointer; color:rgb(19, 94, 160);  transition:0.2s;
-            filter: drop-shadow(5px 2px 20px rgb(255, 255, 255));}
+          filter: drop-shadow(5px 2px 20px rgb(255, 255, 255));}
+
+    @media (max-width: 750px) {
+      .main-content {flex-direction:column; }
+      .photoDiv {width:50%; margin-right:50%; }
+      .textDiv {width:100%; margin-top: 20px;margin-left:5%; }
+      .mailimage,.twitterimage {width: 30px; height: 30px;}
+        }
+        @media (min-width: 1200px) {
+          .main-content {width:70%;}
+          .photoDiv{max-width:250px;}
+          }
+      
+      
+        .featuredWorkDiv{width:85%; height:100%; margin:auto;}
+              .featuredWorkTitle{color:white; text-align:center; margin-bottom:3%; font-weight:bold;}
 
 
-            /* 
-              .fa-envelope {width:100%; height:100%;text-decoration:none; color:rgb(181, 181, 181);}
-              .fa-envelope:hover{cursor:pointer; transition:0.2s;
-                filter: drop-shadow(5px 2px 20px rgb(255, 255, 255));}
-              .fa-envelope:active{cursor:pointer; color:rgb(109, 109, 109); transition:0.2s;
-                filter: drop-shadow(5px 2px 20px rgb(255, 255, 255));}
-
-              .fa-twitter  {width:100%; height:100%; text-decoration:none;color:rgb(54,125,187);}
-              .fa-twitter:hover  {cursor:pointer;  transition:0.2s;
-                filter: drop-shadow(5px 2px 20px rgb(255, 255, 255));}
-              .fa-twitter:active{cursor:pointer; color:rgb(19, 94, 160);  transition:0.2s;
-                filter: drop-shadow(5px 2px 20px rgb(255, 255, 255));}   
-                
-              .resumeButtonDiv{width:min-content; height:100%; margin-top:10%;}
-                .resumeButton{width:100%; height:100%; border:none; border-radius:5px; padding:9%; 
-                            background-color:rgb(37, 14, 87); color:white; font-size:16px;}
-                .resumeButton:hover{cursor:pointer;color:white; 
-                                  filter: drop-shadow(5px 2px 20px rgb(81, 0, 81));}
-                .resumeButton:active{cursor:pointer;color:white; background-color:rgb(19, 0, 74);
-                                   filter: drop-shadow(5px 2px 20px rgb(81, 0, 81));}
-              */
-              .featuredWorkDiv{width:70%; height:100%; margin:auto;}
-              .featuredWorkTitle{color:white; text-align:center; margin-bottom:2%;}
-
-
-              .featuredWork1Div{width:100%; height:30%; border-style: solid; background-color:rgba(5, 5, 5); }
-              .featuredWork1Title{color:white; margin-left:10%;}
+              .featuredWork1Div{width:80%; height:30%; border-style: solid; margin:auto;}
+              .featuredWork1Title{color:white; margin-left:7.5%; margin-bottom:1,5%;}
               .priviewimageDiv{width:90%; height:95%; display:flex; margin:auto; justify-content:space-around;}
-              .priviewimage{width:90%; background:black; padding:20px; background:none;}
+              .priviewimage{width:100%; background:black; padding:5px; background:none; filter: drop-shadow(0px 0px 10px rgb(44, 16, 154)) }
 
-              .priviewimage:hover{cursor:pointer; transition:0.6s; width:95%; height:95%;
+              .priviewimage:hover{cursor:pointer; transition:0.6s; transform:scale(1.05);
               filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));}
 
-          
 
