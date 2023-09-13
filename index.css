@@ -25,7 +25,7 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
       .contact-dropdown {display:none; position:absolute; line-height:40px; background-color:rgb(5,5,5);}
       .contact-div:hover .contact-dropdown{display:block;}
 
-      .contact-dropdown a{text-decoration:none; color:rgb(170, 170, 170);}
+      .contact-dropdown a{text-decoration:none; color:rgb(170, 170, 170); padding-left:3px;}
       .contact-dropdown a :hover{color:rgb(220,220,220); transition:0.1s;}
 
 
