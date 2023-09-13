@@ -9,21 +9,24 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
     }
 
   .navContainer{width:20%; height:100%; margin:auto; display:flex; 
-    justify-content:space-between; align-items: center;}
+    justify-content:space-between; align-items:center;}
       
       .work-div a{text-decoration:none;color:rgb(170, 170, 170);}
       .work-div a:hover{cursor:pointer; color:rgb(220, 220, 220); transition:0.2s;}
-
-      .contact-div{position:relative; display:inline-block;}
-      .contact-div p{text-decoration:none;color:rgb(170, 170, 170);}
-      .contact-div a{text-decoration:none;color:rgb(170, 170, 170);}
       .work-div p :hover{cursor:pointer; color:rgb(220, 220, 220); transition:0.2s;}
 
-      .contact-dropdown {display:none; position:absolute; background-color:rgb(5,5,5);}
-      .contact-div:hover{cursor:pointer; color:rgb(220, 220, 220); transition:0.2s;}
-      .contact-div:hover .contact-dropdown {display: flex; cursor:pointer;}
+      .contact-div{position:relative; display:inline-block;} 
+      .contact-div p{cursor:pointer; text-decoration:none; color:rgb(170, 170, 170);} 
+      .caret{color:rgb(170,170,170); display:inline-block; transform:rotate(180deg); transition: transform 0.2s ease-in-out;}
+      .contact-div p:hover{color:rgb(220,220,220); transition:0.2s;}
+      .contact-div:hover .caret{color:rgb(220,220,220); transform:rotate(0);}
 
 
+      .contact-dropdown {display:none; position:absolute; line-height:40px; background-color:rgb(5,5,5);}
+      .contact-div:hover .contact-dropdown{display:block;}
+
+      .contact-dropdown a{text-decoration:none; color:rgb(170, 170, 170);}
+      .contact-dropdown a :hover{color:rgb(220,220,220); transition:0.1s;}
 
 
 .wrapper{width:100%; min-height:min-content; margin:auto; }
@@ -55,8 +58,8 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
 
       .contactDiv{display:flex; margin-top:1.5%; align-items:center;}
 
-        .emailDiv,.twitterDiv{margin-right:6.5px;}
-        .mailimage,.twitterimage{width:35px; height:35px;}
+        .emailDiv,.twitterDiv, .linkedinDiv{margin-right:6.5px;}
+        .mailimage,.twitterimage, .linkedinimage{width:35px; height:35px;}
 
       
         .mailimage:hover{cursor:pointer; transition:0.5s; transform:scale(1.25);
@@ -68,6 +71,12 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
           filter: drop-shadow(5px 2px 20px rgb(146, 146, 146));}
           .twitterimage:active{cursor:pointer; color:rgb(19, 94, 160);  transition:0.2s;
           filter: drop-shadow(5px 2px 20px rgb(255, 255, 255));}
+
+          .linkedinimage:hover{cursor:pointer; transition:0.5s; transform:scale(1.25);
+            filter: drop-shadow(5px 2px 20px rgb(146, 146, 146));}
+            .linkedinimage:active{cursor:pointer; color:rgb(19, 94, 160);  transition:0.2s;
+            filter: drop-shadow(5px 2px 20px rgb(255, 255, 255));}
+  
 
     @media (max-width: 750px) {
       .main-content {flex-direction:column; }
