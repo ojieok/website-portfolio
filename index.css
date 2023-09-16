@@ -130,4 +130,19 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
               .priviewimage:hover{cursor:pointer; transition:0.6s; transform:scale(1.05);
               filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));}
 
+              .priview-infoDiv{display:flex; margin-left:7.5%; margin-right:7.5%; margin-top:2.5%;}
+              .project1-title{width:50%; float:left; color:rgb(215, 215, 215); }
+              .project1-date{width:50%; float:right; text-align:right; color:rgb(215, 215, 215); }
+
+              
+              .featuredwork2Div{width:80%; height:30%; margin:auto; margin-top:7%; margin-bottom:7%;}
+              .eit-tools-imgDiv{width:85%; height:95%; margin:auto; }
+              .eit-tools-image{width: 100%; }
+              .eit-tools-textDiv p{color:rgb(215, 215, 215); margin-left:7.5%; margin-top:2.5%;}
+              .eit-tools-image:hover{cursor:pointer; transform: scale(1.05); transition:0.6s ease-in-out;}
+
+              .eit-tools-infoDiv{display:flex; margin-left:7.5%; margin-right:7.5%;}
+              .project2-title{width:50%; float:left; color:rgb(215, 215, 215); }
+              .project2-date{width:50%; float:right; text-align:right; color:rgb(215, 215, 215); }
+
 
