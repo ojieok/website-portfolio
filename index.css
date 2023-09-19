@@ -8,7 +8,7 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
     justify-content:space-between; background-color:rgb(10, 10, 10);
     }
 
-  .navContainer{width:20%; height:100%; margin:auto; display:flex; 
+  .navContainer{width:30%; height:100%; margin:auto; display:flex; 
     justify-content:space-between; align-items:center;}
       
       .work-div a{text-decoration:none;color:rgb(170, 170, 170);}
@@ -74,20 +74,8 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
         .linkedinDiv:hover i.fa-linkedin-square {
             transform: scale(1.15); transition: transform 0.3s ease;}
 
-    @media (max-width: 750px) {
-      .main-content {flex-direction:column; }
-      .photoDiv {width:50%; margin-right:50%; }
-      .textDiv {width:100%; margin-top: 20px;margin-left:5%; }
-      .mailimage,.twitterimage {width: 30px; height: 30px;}
-        }
-        @media (min-width: 1200px) {
-          .main-content {width:70%;}
-          .photoDiv{max-width:250px;}
-          }
 
           
-      
-      
         .featuredWorkDiv{width:85%; height:100%; margin:auto; }
 
         @keyframes blink {
@@ -135,7 +123,7 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
               .project1-date{width:50%; float:right; text-align:right; color:rgb(215, 215, 215); }
 
               
-              .featuredwork2Div{width:80%; height:30%; margin:auto; margin-top:7%; margin-bottom:7%;}
+              .featuredwork2Div{width:80%; height:30%; margin:auto; margin-top:7%; }
               .eit-tools-imgDiv{width:85%; height:95%; margin:auto; }
               .eit-tools-image{width: 100%; }
               .eit-tools-textDiv p{color:rgb(215, 215, 215); margin-left:7.5%; margin-top:2.5%;}
@@ -146,3 +134,47 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
               .project2-date{width:50%; float:right; text-align:right; color:rgb(215, 215, 215); }
 
 
+
+
+/* For small screens (up to 750px) */
+@media (max-width: 600px) {
+  /* Mobile-specific styles here */
+    .work-div{display:none;}
+    .contact-div{text-align: center; margin: auto;}
+
+    .main-content {flex-direction:column; width:100%;}
+    .photoDiv {width:50%; float:left; align-items: left; margin-right:50%; max-height:300px;}
+    .textDiv {width:100%; margin-top: 20px;margin-left:5%; }
+    .featuredWorkDiv{width:100%; margin:0;}
+    .featuredWork1Div{width:100%; }
+    .featuredwork2Div{width:100%; margin-top:15%; }
+
+}
+
+@media (min-width: 601px) and (max-width:900px) {
+  /* Mobile-specific styles here */
+    .main-content {flex-direction:column; width:100%;}
+    .photoDiv {width:100%; float:left; align-items: left; margin-right:50%; max-height:300px;}
+    .textDiv {width:100%; margin-top: 20px;margin-left:5%; }
+    .featuredWorkDiv{width:100%; margin:0;}
+    .featuredWork1Div{width:100%; }
+    .featuredwork2Div{width:100%; }
+
+}
+
+@media (min-width: 901px) and (max-width:1200px) {
+  /* Mobile-specific styles here */
+    .main-content {width:80%;}
+    .featuredWorkDiv{width:85%; }
+    .featuredWork1Div{width:100%; }
+    .featuredwork2Div{width:100%; }
+
+}
+
+@media (min-width:1201px) {
+  /* Mobile-specific styles here */
+    .main-content {width:72.5%;}
+    .featuredWorkDiv{width:82.5%; }
+    .featuredWork1Div{width:100%; }
+    .featuredwork2Div{width:100%;}
+}
