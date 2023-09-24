@@ -28,6 +28,9 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
 
       .contact-div:hover .contact-dropdown{display:block;}
       .contact-dropdown a:hover{color:rgb(220,220,220); transition:0.1s;}
+      
+      .contact-div:active .contact-dropdown{display:block;}
+      .contact-dropdown a:hover{color:rgb(220,220,220); transition:0.1s;}
 
 
 .wrapper{width:100%; min-height:min-content; margin:auto; }
@@ -48,7 +51,7 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
       height:100%; float:right; width:75%; padding-right:15%;
     }
 
-      .nameDiv{ margin-top:5%; }
+      .nameDiv{ margin-top:8%; }
         .name{color:rgb(170, 170, 170); font-size:24px; font-weight:bold; }
 
       .roleDiv{margin-top:0.2%;}
@@ -123,7 +126,7 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
               .project1-date{width:50%; float:right; text-align:right; color:rgb(215, 215, 215); }
 
               
-              .featuredwork2Div{width:80%; height:30%; margin:auto; margin-top:7%; }
+              .featuredwork2Div{width:80%; height:30%; margin:auto; margin-top:7%; margin-bottom:50px;}
               .eit-tools-imgDiv{width:85%; height:95%; margin:auto; }
               .eit-tools-image{width: 100%; }
               .eit-tools-textDiv p{color:rgb(215, 215, 215); margin-left:7.5%; margin-top:2.5%;}
