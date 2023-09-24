@@ -8,14 +8,15 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
     justify-content:space-between; background-color:rgb(10, 10, 10);
     }
 
-  .navContainer{width:30%; height:100%; margin:auto; display:flex; 
-    justify-content:space-between; align-items:center;}
+    /*
+  .navContainer{ height:100%; margin:auto; display:block; 
+    justify-content:space-between; align-items:right;}
       
       .work-div a{text-decoration:none;color:rgb(170, 170, 170);}
       .work-div a:hover{cursor:pointer; color:rgb(220, 220, 220); transition:0.2s;}
       .work-div p :hover{cursor:pointer; color:rgb(220, 220, 220); transition:0.2s;}
-
-      .contact-div{position:relative; display:inline-block;} 
+      */
+      .contact-div{position:relative; display:inline-block; margin-left: 80%; } 
       .contact-div p{cursor:pointer; text-decoration:none; color:rgb(170, 170, 170);} 
       .caret{color:rgb(170,170,170); display:inline-block; transform:rotate(180deg); transition: 0.2s ease-in-out;}
 
@@ -51,7 +52,7 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
       height:100%; float:right; width:75%; padding-right:15%;
     }
 
-      .nameDiv{ margin-top:8%; }
+      .nameDiv{ margin-top:8%;}
         .name{color:rgb(170, 170, 170); font-size:24px; font-weight:bold; }
 
       .roleDiv{margin-top:0.2%;}
@@ -142,9 +143,6 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
 /* For small screens (up to 750px) */
 @media (max-width: 600px) {
   /* Mobile-specific styles here */
-    .work-div{display:none;}
-    .contact-div{text-align: center; margin: auto;}
-
     .main-content {flex-direction:column; width:100%;}
     .photoDiv {width:50%; float:left; align-items: left; margin-right:50%; max-height:300px;}
     .textDiv {width:100%; margin-top: 20px;margin-left:5%; }
@@ -156,6 +154,7 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
 
 @media (min-width: 601px) and (max-width:900px) {
   /* Mobile-specific styles here */
+
     .main-content {flex-direction:column; width:100%;}
     .photoDiv {width:100%; float:left; align-items: left; margin-right:50%; max-height:300px;}
     .textDiv {width:100%; margin-top: 20px;margin-left:5%; }
