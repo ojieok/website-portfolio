@@ -176,7 +176,7 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
 @media (min-width:1201px) {
   /* Mobile-specific styles here */
     .main-content {width:72.5%;}
-    .featuredWorkDiv{width:82.5%; }
+    .featuredWorkDiv{width:75%; }
     .featuredWork1Div{width:100%; }
     .featuredwork2Div{width:100%;}
 }
