@@ -17,21 +17,21 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
       .work-div p :hover{cursor:pointer; color:rgb(220, 220, 220); transition:0.2s;}
       */
       .contact-div{position:relative; display:inline-block; margin-left: 80%; } 
-      .contact-div p{cursor:pointer; text-decoration:none; color:rgb(170, 170, 170);} 
-      .caret{color:rgb(170,170,170); display:inline-block; transform:rotate(180deg); transition: 0.2s ease-in-out;}
+      .contact-div p{cursor:pointer; text-decoration:none; color:rgb(85, 85, 85);} 
+      .caret{color:rgb(85,85,85); display:inline-block; transform:rotate(180deg); transition: 0.2s ease-in-out;}
 
-      .contact-div:hover p{color:rgb(220,220,220); transition:0.2s;}
-      .contact-div:hover .caret{color:rgb(220,220,220); transform:rotate(0);} 
+      .contact-div:hover p{color:rgb(200,200,200); transition:0.2s;}
+      .contact-div:hover .caret{color:rgb(200,200,200); transform:rotate(0);} 
 
 
       .contact-dropdown {display:none; position:absolute; line-height:40px; background-color:rgb(5,5,5);}
-      .contact-dropdown a{text-decoration:none; color:rgb(170, 170, 170); padding-left:3px;}
+      .contact-dropdown a{text-decoration:none; color:rgb(85, 85, 85); padding-left:3px;}
 
       .contact-div:hover .contact-dropdown{display:block;}
-      .contact-dropdown a:hover{color:rgb(220,220,220); transition:0.1s;}
+      .contact-dropdown a:hover{color:rgb(200,200,200); transition:0.1s;}
       
       .contact-div:active .contact-dropdown{display:block;}
-      .contact-dropdown a:hover{color:rgb(220,220,220); transition:0.1s;}
+      .contact-dropdown a:hover{color:rgb(200,200,200); transition:0.1s;}
 
 
 .wrapper{width:100%; min-height:min-content; margin:auto; }
@@ -56,16 +56,16 @@ nav{display:flex; width:100%; height:auto; line-height:70px;
         .name{color:rgb(170, 170, 170); font-size:24px; font-weight:bold; }
 
       .roleDiv{margin-top:0.2%;}
-        .role{color:rgb(200, 200, 200); font-size:21px;}
+        .role{color:rgb(150, 150, 150); font-size:21px;}
         
       .infoDiv{line-height:22.5px; margin-top:15px;}
-        .info{font-size:17px; color:rgb(225, 225, 225);}
+        .info{font-size:17px; color:rgb(100, 100, 100);}
 
       .contactDiv{display:flex; margin-top:2.5%; align-items:center;}
 
-        .emailDiv,.twitterDiv, .linkedinDiv{margin-right:8px;}
+        .emailDiv,.linkedinDiv{margin-right:8px;}
         
-        .emailDiv i.fa, .twitterDiv i.fa, .linkedinDiv i.fa {
+        .emailDiv i.fa, .linkedinDiv i.fa {
         display: inline-block;  color:rgb(75, 75, 75);
       }
 
