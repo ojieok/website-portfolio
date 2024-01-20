@@ -1,0 +1,32 @@
+*{background-color:black; color:white; font-family:"Rajdhani", sans-serif; font-weight: 100;
+        margin:0; padding:0;}
+
+body{margin-left:150px; margin-right:150px;}
+
+header{margin-top:35px; padding:0;}
+nav{width:max-content}
+    nav ul{list-style: none;}
+    nav li{display:inline; padding-right:100px;}
+    nav a{text-decoration: none;}
+    nav a:hover{cursor: pointer;}
+
+
+main{margin-top:125px; margin-bottom:170px;}
+
+    #time-div{text-align:right;}
+        #time-div a{}
+    #name-div{margin-top:125px; margin-bottom:35px;}
+        #name-div p{font-size:48px;}
+    #links-div{}
+        #links-div ul{list-style:none;}
+        #links-div li{margin-top:15px;}
+        #links-div a{text-decoration:none; font-size: 20px;}
+        #links-div a:hover a{cursor:pointer;}
+
+footer{}
+    @keyframes blink {
+        0%, 100%{opacity: 1;}
+        50%{opacity:0.25;}
+    }
+    #scrolldown-div{text-align:center; width:max-content; margin:auto;}
+    #scrolldown-div p{font-size:30px; transform: rotate(180deg); animation: blink 2s infinite;}
