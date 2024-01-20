@@ -1,0 +1,27 @@
+*{background-color:black; color:white; font-family:"Rajdhani", sans-serif; font-weight: 100;
+    margin:0; padding:0;}
+
+body{margin-left:150px; margin-right:150px;}
+
+header{margin-top:35px; padding:0;}
+nav{width:max-content}
+nav ul{list-style: none;}
+nav li{display:inline; padding-right:100px;}
+nav a{text-decoration: none;}
+nav a:hover{cursor: pointer;}
+
+
+main{margin-top:75px;}
+
+    #view-github{}
+
+    .h3{font-size:30px;}
+    #project-div{}
+        #sdtools-div{}
+        #gddtoolkit-div{}
+        #inst326-div{}
+        #priview-div{}
+        #inst126-div{}
+
+    #research-div{}
+        #gddseminar-div{}
