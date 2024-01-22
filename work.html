@@ -1,104 +1,100 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "work.css">
-    <script src="https://kit.fontawesome.com/3cd31b8d04.js" crossorigin="anonymous"></script>
+    <link rel = "icon" type = "image/x-icon" href = "">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Finlandica&family=Graduate&family=Barlow+Semi+Condensed:wght@100&family=Barlow:wght@100&family=IBM+Plex+Sans:wght@100&family=PT+Sans&family=Roboto+Condensed:wght@300&family=Barlow+Semi+Condensed:wght@300&family=400&display=swap"rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family
+                =Inconsolata:wdth,wght@112.5,200..900&family=Rajdhani:wght@300;400;500;600;700&family
+                =Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 
-    <title> Ojie Okodogbe</title>
+    <title> Ojie Okodogbe </title>
 </head>
-
 <body>
-    <div class = "container">
-
+    <header>
         <nav>
-            <div class = navContainer>
-
-                <div class = "home-div">
-                    <a href ="index.html"> Home </a> 
-                </div>
-
-                <div class = "contact-div">
-                    <p> Contact <span class = "caret">^</span> </p>
-                    
-                    <div class =  'contact-dropdown'>
-                        <a href = "mailto:ojieok@skiff.com"> Email </a>
-                        <a href = "www.linkedin.com/in/ojie-okodogbe-96bb6428a" target="_blank"> Linkedin </a>
-                        <a href = "https://twitter.com/ojienok" target="_blank"> Twitter </a>
-                    </div>
-                        
-                </div>
-                
-            </div>
-
+            <ul>
+                <li> <a href = "index.html"> Home </a></li>
+                <li> <a href = "work.html"> Work </a></li>
+            </ul>
         </nav>
+    </header>
 
-
-
-        <div class = "wrapper">
-      
-            <div class = "featuredWorkDiv">
-
-                <div class = "scroll-down-logo">
-                    <p class = "scroll-down">^</p>
-                </div>
-
-                <div class = "featuredWorkTitle">
-                    <p>Work</p>
-                </div>
-
-                <div class = featuredWork1Div>
-
-                    <div class = "priviewimageDiv">
-                        <div class = "priviewimage1Div">
-                            <img src ="priviewimage1.png" class = "priviewimage1">
-                        </div>
-                        <div class = "priviewimage2Div">
-                            <img src = "priviewimage2.png" class = "priviewimage2">
-                        </div>
-                        <div class = "priviewimage3Div">
-                            <img src = "priviewimage3.png" class = "priviewimage3">
-                        </div>
-                    </div>
-
-                    <div class = 'priview-infoDiv'>
-                        <div class = "project1-title"> Priview </div>
-                        <div class = "project1-date"> 2023 </div>
-                    </div>
-
-                </div>
-
-                <div class = "featuredwork2Div">
-                    <div class = 'eit-tools-imgDiv'>
-                        <img src = 'eit-tools-img.png' class = 'eit-tools-image'>
-                    </div>
-                    <div class = 'eit-tools-infoDiv'>
-                        <div class = "project2-title"> EIT Tools </div>
-                        <div class = "project2-date"> 2023 </div>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-
-            
-
-
-
-
-
+    <main>
+        <div id = 'view-github'>
+            <a href = ''> View my Github</a>
         </div>
 
-        
+        <div id = 'project-div'>
+            <p class = 'h3'> Projects </p>
 
-    </div>
+                <div id = 'inst326-div'>
+                    <div class = 'insttitle-div'>
+                        <p> PayStub Extraction  . <span id = 'github-view'> <a href = ''> View on Github </a> </span> </p>
+                    </div>
+                    <div class = 'projectdescription-div'>
+                        <p> Developed a versatile tool for extracting vital details from pay stubs, enabling seamless income allocation to checking and savings accounts, and calculating total savings using Python. Leveraged Pandas for efficient data handling and visualization of recent income deposits.</p>
+                    </div>
+                </div>
 
-</body>
-</html>
+                <div id = 'gddtoolkit-div'>
+                    <div class = 'gddtitle-div'>
+                        <p> GDD Development Ethics Toolkit . <span id = 'github-view'> <a href = ''> View on Github </a> </span></p>
+                    </div>
+                    <div class = 'projectdescription-div'>
+                        <p> Pivotal in the front-end development and UI/UX design of a web app for a digital toolkit. Involved in the development and integration of JAY-I, an AI project that blends the philosophical insights of Jay Drydyk with the power of Artificial Intelligence (AI) into the toolkit. </p>
+                    </div>
+                </div>
+
+                <div id = 'sdtools-div'>
+                <div id = 'sdtoolsmain-div'>
+                    <div class = 'sdtitle-div'>
+                        <p> EIT Service Desk Tools .</p>
+                    </div>
+                    <div class = 'projectdescription-div'>
+                        <p> Designed and developed an internal web app for the Engineering-IT Service Desk at the University of Maryland. Utilized JavaScript, HTML and CSS to build a directory to all tools used by the Service Desk. </p>
+                    </div>
+                </div>
+                <div id = 'sdtoolsimg-div'>
+                    <img id = 'sdimg' src = 'eit-tools-img1.png'>
+                </div>
+                </div>
+
+                <div id = 'priview-div'>
+                    <div id = 'priviewmain-div'>
+                        <div class = 'priviewtitle-div'>
+                            <p> PriView .</p>
+                        </div>
+                        <div class = 'projectdescription-div'>
+                            <p> Designed the UI for a privacy-centric mobile app designed to help users navigate and safeguard their digital experiences. </p>
+                        </div>
+                    </div>
+
+                    <div id = 'priviewimg-div'>
+                        <div id = "priviewimage1Div">
+                            <img id = "priviewimage1" src = "priviewimage1.png" >
+                        </div>
+                        <div id = "priviewimage2Div">
+                            <img id = "priviewimage2" src = "priviewimage2.png" >
+                        </div>
+                        <div id = "priviewimage3Div">
+                            <img id = "priviewimage3" src = "priviewimage3.png" >
+                        </div>
+                    </div>
+                    </div>
+        </div>
+
+        <div id = 'research-div'>
+            <p class = 'h3'> Research </p>
+                <div id = 'gddseminar-div'>
+                    <p> GDD Smart City Singapore</p>
+                </div>
+        </div>
+    </main>
+
+    <footer></footer>

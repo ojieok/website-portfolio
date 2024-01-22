@@ -1,85 +1,88 @@
-*{font-family:"Barlow Semi Condensed"; margin:0; padding:0;}
+*{background-color:black; color:white; font-family:"Rajdhani", sans-serif; font-weight: 100;
+    margin:0; padding:0;}
 
-body{ background-color: rgb(0, 0, 0);}
-.container{width:100%; min-height:100vh;}
+body{margin-left:150px; margin-right:150px;}
 
-nav{display:flex; width:100%; height:auto; line-height:70px; 
-  justify-content:space-between; background-color:rgb(10, 10, 10);
-  }
+header{margin-top:35px; padding:0;}
+nav{width:max-content}
+nav ul{list-style: none;}
+nav li{display:inline; padding-right:100px;}
+nav a{text-decoration: none;}
+nav a:hover{cursor: pointer;}
 
-.navContainer{width:20%; height:100%; margin:auto; display:flex; 
-  justify-content:space-between; align-items:center;}
+
+main{margin-top:120px;}
+
+    #view-github{margin-bottom:50px; text-align: right;}
+    #view-github a{color:rgb(100,100,100); text-align:right; margin-bottom:50px; text-decoration:underline;}
+    #view-github a:hover{color:rgb(185,185,185); cursor:pointer;}
+
     
-    .home-div a{text-decoration:none;color:rgb(170, 170, 170);}
-    .home-div a:hover{cursor:pointer; color:rgb(220, 220, 220); transition:0.2s;}
-    .home-div p :hover{cursor:pointer; color:rgb(220, 220, 220); transition:0.2s;}
+    #project-div{margin-bottom:110px;}
+    .h3{font-size:25px; text-decoration: underline; margin-bottom:20px;}
 
-    .contact-div{position:relative; display:inline-block;} 
-    .contact-div p{cursor:pointer; text-decoration:none; color:rgb(170, 170, 170);} 
-    .caret{color:rgb(170,170,170); display:inline-block; transform:rotate(180deg); transition: 0.2s ease-in-out;}
+        #inst326-div{margin-bottom:60px; display: flex;}
+        #inst326-div p{color:rgb(185, 185, 185); line-height:25px;}
+            .insttitle-div{margin-right:10px; margin-top:10px; width:150px;}
+            .insttitle-div p{font-size:18px;}
+            #github-view{font-size:14px; color:rgb(85, 85, 85);}
+            #github-view a{font-size:14px; color:rgb(85, 85, 85); text-decoration: none;}
+            #github-view a:hover{font-size:14px; color:rgb(100, 100, 100); text-decoration: underline;}
 
-    .contact-div:hover p{color:rgb(220,220,220); transition:0.2s;}
-    .contact-div:hover .caret{color:rgb(220,220,220); transform:rotate(0);} 
-
-
-    .contact-dropdown {display:none; position:absolute; line-height:40px; background-color:rgb(5,5,5);}
-    .contact-dropdown a{text-decoration:none; color:rgb(170, 170, 170); padding-left:3px;}
-
-    .contact-div:hover .contact-dropdown{display:block;}
-    .contact-dropdown a:hover{color:rgb(220,220,220); transition:0.1s;}
-
-  /* Projects */
-  .wrapper{width:100%; min-height:min-content; margin:auto; }
-
-  .main-content{
-    width:70%; height:30%; display:flex; 
-    margin:auto; margin-top:7%; margin-bottom:4%; 
-  }
+            .projectdescription-div{width:700px;}
+            .projectdescription-div p{}
 
 
-              .featuredWorkTitle{color:rgb(170,170,170); text-align:center; margin-bottom:5%; font-weight:bold;}
+        #gddtoolkit-div{margin-bottom:60px; display:flex;}
+        #gddtoolkit-div p{color:rgb(185, 185, 185); line-height: 25px;}
+            .gddtitle-div{margin-right:5px; margin-top:20px; width:250px;}
+            .gddtitle-div p{font-size:18px;}
+            #course{font-size:14px;}
+            .projectdescription-div{width:700px;}
+            .projectdescription-div p{}
 
 
-              .featuredWork1Div{width:80%; height:30%; border-style: solid; margin:auto;}
-              .featuredWork1Title{color:rgb(215, 215, 215); margin-left:7.5%; margin-top:2.5%;}
-              .priviewimageDiv{width:90%; height:95%; display:flex; position:relative; margin:auto; justify-content:space-around;}
-              .priviewimage{width:100%; background:black; padding:5px; background:none; filter: drop-shadow(0px 0px 10px rgb(44, 16, 154)) }
+        #sdtools-div{margin-bottom:80px;}
+        #sdtools-div p{}
+            #sdtoolsmain-div{display:flex;}
+            #sdtoolsmain-div p{color:rgb(185,185,185); line-height: 25px;}
+                    .sdtitle-div{margin-right:5px; margin-top:10px; width:180px;}
+                    .sdtitle-div p{font-size:18px;}
+                        #course{font-size:14px;}
+                    .projectdescription-div{width:700px; margin-bottom: 10px;}
+                    .projectdescription-div p{}
+            #sdtoolsimg-div{margin-left:75px;}
+                #sdimg{height:600px;}
+                #sdimg:hover{cursor:pointer; transform: scale(1.05); transition:1s ease-in-out;}
 
 
-              .priviewimage1{width:100%; background:black; padding:5px; background:none; 
-                filter: drop-shadow(0px 0px 10px rgb(44, 16, 154)) }
-                .priviewimage1:hover{cursor:pointer; transition:1.25s; transform:scale(1.15);
-                  filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));} .priviewimage1Div{z-index:2;}
-                
+        #priview-div{margin-bottom:60px;}
+        #priview-div p{}
+            #priviewmain-div{display:flex; margin-bottom:20px;}
+            #priviewmain-div p{color:rgb(185,185,185); line-height: 25px;}
+                .priviewtitle-div{margin-right:5px; margin-top:10px; width:80px;}
+                .priviewtitle-div p{font-size:18px;}
+                    #course{font-size:14px;}
+                .projectdescription-div{width:700px; margin-bottom: 10px;}
+                .projectdescription-div p{}
 
-              .priviewimage2{width:100%; background:black; padding:5px; background:none; transform:scale(1.05);
-                filter: drop-shadow(0px 0px 10px rgb(44, 16, 154));z-index:1; }
-                .priviewimage2:hover{cursor:pointer; transition:1s; transform:scale(1.10);
-                  filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));} 
+            #priviewimg-div{margin-left:25px; display:flex;}
 
+                #priviewimage1{width:275px; background:black; padding:5px; background:none;
+                    filter: drop-shadow(0px 0px 10px rgb(44, 16, 154));}
+                #priviewimage1:hover{cursor:pointer; transition:1.25s; transform:scale(1.15);
+                    filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));} #priviewimage1Div{z-index:2;}
+            
+                #priviewimage2{width:275px; background:black; padding:5px; background:none; transform:scale(1.05);
+                    filter: drop-shadow(0px 0px 10px rgb(44, 16, 154));z-index:1;}
+                #priviewimage2:hover{cursor:pointer; transition:1s; transform:scale(1.10);
+                    filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));} 
 
-              .priviewimage3{width:100%; background:black; padding:5px; background:none; 
-                filter: drop-shadow(0px 0px 10px rgb(44, 16, 154)) }
-                .priviewimage3:hover{cursor:pointer; transition:1.25s; transform:scale(1.15);
-                  filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));}
+                #priviewimage3{width:275px; background:black; padding:5px; background:none; 
+                    filter: drop-shadow(0px 0px 10px rgb(44, 16, 154)) }
+                #priviewimage3:hover{cursor:pointer; transition:1.25s; transform:scale(1.15);
+                    filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));}
 
-
-              .priviewimage:hover{cursor:pointer; transition:0.6s; transform:scale(1.05);
-              filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));}
-
-              .priview-infoDiv{display:flex; margin-left:7.5%; margin-right:7.5%; margin-top:2.5%;}
-              .project1-title{width:50%; float:left; color:rgb(215, 215, 215); }
-              .project1-date{width:50%; float:right; text-align:right; color:rgb(215, 215, 215); }
-
-              
-              .featuredwork2Div{width:80%; height:30%; margin:auto; margin-top:7%; margin-bottom:7%;}
-              .eit-tools-imgDiv{width:85%; height:95%; margin:auto; }
-              .eit-tools-image{width: 100%; }
-              .eit-tools-textDiv p{color:rgb(215, 215, 215); margin-left:7.5%; margin-top:2.5%;}
-              .eit-tools-image:hover{cursor:pointer; transform: scale(1.05); transition:0.6s ease-in-out;}
-
-              .eit-tools-infoDiv{display:flex; margin-left:7.5%; margin-right:7.5%; margin-top:2.5%;}
-              .project2-title{width:50%; float:left; color:rgb(215, 215, 215); }
-              .project2-date{width:50%; float:right; text-align:right; color:rgb(215, 215, 215); }
-
-
+                    
+    #research-div{}
+        #gddseminar-div{}
