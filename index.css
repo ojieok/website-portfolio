@@ -1,32 +1,32 @@
-*{background-color:black; color:rgb(225, 225, 225); font-family:"Rajdhani", sans-serif; font-weight: 100;
-        margin:0; padding:0;}
+*{background-color:black; color:rgb(255, 255, 255); font-family:"Rajdhani"; font-weight:200;
+        margin:0; padding:0; font-size:16px;}
 
 body{margin-left:150px; margin-right:150px;}
 
-header{margin-top:35px; padding:0;}
+header{margin-top:55px; padding:0;}
 nav{width:max-content}
     nav ul{list-style: none;}
     nav li{display:inline; padding-right:100px;}
-    nav a{text-decoration: none;}
-    nav a:hover{cursor: pointer;}
+    nav a{text-decoration: none; color:rgb(125,125,125)}
+    nav a:hover{cursor: pointer; color:rgb(215,215,215)}
 
 
-main{margin-top:125px; margin-bottom:130px;}
+main{margin-top:125px; margin-bottom:150px;}
 
     #time-div{text-align:right;}
         #time-div a{}
     #name-div{margin-top:125px; margin-bottom:35px;}
-        #name-div p{font-size:48px;}
+        #name-div p{font-size:45px; font-weight:500;}
     #links-div{}
         #links-div ul{list-style:none;}
-        #links-div li{margin-top:15px;}
-        #links-div a{text-decoration:none; font-size: 20px;}
-        #links-div a:hover a{cursor:pointer;}
+        #links-div li{margin-top:10px;}
+        #links-div a{text-decoration:none; font-size: 18px; color:rgb(150,150,150); font-weight:400;}
+        #links-div a:hover {cursor:pointer; color:rgb(225,225,225)}
 
 footer{}
     @keyframes blink {
         0%, 100%{opacity: 1;}
-        50%{opacity:0.25;}
+        70%{opacity:0.25;}
     }
 
     #mywork-div{text-align:center; width:max-content; margin:auto;}

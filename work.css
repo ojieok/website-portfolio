@@ -1,20 +1,20 @@
-*{background-color:black; color:white; font-family:"Rajdhani", sans-serif; font-weight: 100;
+*{background-color:black; color:white; font-family:"Rajdhani"; font-weight:200;
     margin:0; padding:0;}
 
 body{margin-left:150px; margin-right:150px;}
 
-header{margin-top:35px; padding:0;}
+header{margin-top:55px; padding:0;}
 nav{width:max-content}
-nav ul{list-style: none;}
-nav li{display:inline; padding-right:100px;}
-nav a{text-decoration: none;}
-nav a:hover{cursor: pointer;}
+    nav ul{list-style: none;}
+    nav li{display:inline; padding-right:100px;}
+    nav a{text-decoration: none; color:rgb(85,85,85)}
+    nav a:hover{cursor: pointer; color:rgb(185,185,185)}
+    
 
-
-main{margin-top:120px;}
+main{margin-top:100px;}
 
     #view-github{margin-bottom:50px; text-align: right;}
-    #view-github a{color:rgb(100,100,100); text-align:right; margin-bottom:50px; text-decoration:underline;}
+    #view-github a{color:rgb(125,125,125); text-align:right; margin-bottom:50px; text-decoration:underline;}
     #view-github a:hover{color:rgb(185,185,185); cursor:pointer;}
 
     
@@ -22,7 +22,7 @@ main{margin-top:120px;}
     .h3{font-size:25px; text-decoration: underline; margin-bottom:20px;}
 
         #inst326-div{margin-bottom:60px; display: flex;}
-        #inst326-div p{color:rgb(185, 185, 185); line-height:25px;}
+        #inst326-div p{color:rgb(225, 225, 225); line-height:30px;}
             .insttitle-div{margin-right:10px; margin-top:10px; width:150px;}
             .insttitle-div p{font-size:18px;}
             #github-view{font-size:14px; color:rgb(85, 85, 85);}
@@ -34,7 +34,7 @@ main{margin-top:120px;}
 
 
         #gddtoolkit-div{margin-bottom:60px; display:flex;}
-        #gddtoolkit-div p{color:rgb(185, 185, 185); line-height: 25px;}
+        #gddtoolkit-div p{color:rgb(185, 185, 185); line-height: 30px;}
             .gddtitle-div{margin-right:5px; margin-top:20px; width:250px;}
             .gddtitle-div p{font-size:18px;}
             #course{font-size:14px;}
@@ -45,7 +45,7 @@ main{margin-top:120px;}
         #sdtools-div{margin-bottom:80px;}
         #sdtools-div p{}
             #sdtoolsmain-div{display:flex;}
-            #sdtoolsmain-div p{color:rgb(185,185,185); line-height: 25px;}
+            #sdtoolsmain-div p{color:rgb(185,185,185); line-height: 30px;}
                     .sdtitle-div{margin-right:5px; margin-top:10px; width:180px;}
                     .sdtitle-div p{font-size:18px;}
                         #course{font-size:14px;}
@@ -59,7 +59,7 @@ main{margin-top:120px;}
         #priview-div{margin-bottom:60px;}
         #priview-div p{}
             #priviewmain-div{display:flex; margin-bottom:20px;}
-            #priviewmain-div p{color:rgb(185,185,185); line-height: 25px;}
+            #priviewmain-div p{color:rgb(185,185,185); line-height: 30px;}
                 .priviewtitle-div{margin-right:2.5px; margin-top:7.5px; width:70px;}
                 .priviewtitle-div p{font-size:18px;}
                     #course{font-size:14px;}
