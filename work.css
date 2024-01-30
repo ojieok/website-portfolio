@@ -3,7 +3,7 @@
 
 body{margin-left:11%; margin-right:11%;}
 
-header{margin-top:5%; padding:0;}
+header{margin-top:50px; padding:0;}
 nav{width:max-content}
     nav ul{list-style: none;}
     nav li{display:inline; padding-right:100px;}
@@ -23,34 +23,33 @@ main{margin-top:8%;}
 
         #inst326-div{margin-bottom:5%; display: flex; width:100%;}
         #inst326-div p{color:rgb(185, 185, 185); line-height:30px;}
-            .insttitle-div{margin-right:1%; margin-top:1%; width:15%;}
+        .dot{}
+            .insttitle-div{margin-right:1%; margin-top:1%; width:150px;}
             .insttitle-div p{font-size:18px; color:rgb(225,225,225)}
-            #github-view{font-size:14px; color:rgb(85, 85, 85);}
-            #github-view a{font-size:14px; color:rgb(85, 85, 85); text-decoration: none;}
-            #github-view a:hover{font-size:14px; color:rgb(100, 100, 100); text-decoration: underline;}
+            .github-view{font-size:14px; color:rgb(85, 85, 85);}
+            .github-view a{font-size:14px; color:rgb(85, 85, 85); text-decoration: none;}
+            .github-view a:hover{font-size:14px; color:rgb(100, 100, 100); text-decoration: underline;}
 
             .projectdescription-div{width:75%;}
-            .projectdescription-div p{}
+            .projectdescription-div p{max-width:100%; box-sizing: border-box;}
 
 
-        #gddtoolkit-div{margin-bottom:5%; display:flex; width:100;}
+        #gddtoolkit-div{margin-bottom:5%; display:flex; width:100%;}
         #gddtoolkit-div p{color:rgb(185, 185, 185); line-height: 30px;}
-            .gddtitle-div{margin-right:1%; margin-top:1%; width:22%;}
+            .gddtitle-div{margin-right:1%; margin-top:1%; width:240px;}
             .gddtitle-div p{font-size:18px; color:rgb(225,225,225)}
             #course{font-size:14px;}
-            .projectdescription-div{width:75%;}
-            .projectdescription-div p{}
+            
 
 
         #sdtools-div{margin-bottom:6%; width:100%;}
         #sdtools-div p{}
             #sdtoolsmain-div{display:flex;}
             #sdtoolsmain-div p{color:rgb(185,185,185); line-height: 30px;}
-                    .sdtitle-div{margin-right:1%; margin-top:1%; width:15%;}
+                    .sdtitle-div{margin-right:1%; margin-top:1%; width:170px;}
                     .sdtitle-div p{font-size:18px; color:rgb(225,225,225s)}
                         #course{font-size:14px;}
-                    .projectdescription-div{width:75%; margin-bottom: 10px;}
-                    .projectdescription-div p{}
+                    
             #sdtoolsimg-div{margin-left:4%; width:100%;}
                 #sdimg{width:80%;}
                 #sdimg:hover{cursor:pointer; transform: scale(1.05); transition:1s ease-in-out;}
@@ -60,29 +59,72 @@ main{margin-top:8%;}
         #priview-div p{}
             #priviewmain-div{display:flex; margin-bottom:20px; width:100%;}
             #priviewmain-div p{color:rgb(185,185,185); line-height: 30px;}
-                .priviewtitle-div{margin-right:2.5px; margin-top:7.5px; width:70px;}
+                .priviewtitle-div{margin-right:2.5px; margin-top:7.5px; width:80px;}
                 .priviewtitle-div p{font-size:18px;}
                     #course{font-size:14px;}
-                .projectdescription-div{width:700px; margin-bottom: 10px;}
-                .projectdescription-div p{}
 
-            #priviewimg-div{margin-left:25px; display:flex; width:100;}
+            #priviewimg-div{margin-left:25px; display:flex; width:90%;}
 
-                #priviewimage1{width:100%; background:black; padding:5px; background:none;
+                #oldpriviewimage1{width:100%; background:black; padding:5px; background:none;
                     filter: drop-shadow(0px 0px 10px rgb(44, 16, 154));}
-                #priviewimage1:hover{cursor:pointer; transition:1.25s; transform:scale(1.15);
+                #oldpriviewimage1:hover{cursor:pointer; transition:1.25s; transform:scale(1.15);
                     filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));} #priviewimage1Div{z-index:2;}
             
-                #priviewimage2{width:100%; background:black; padding:5px; background:none; transform:scale(1.05);
+                #oldpriviewimage2{width:100%; background:black; padding:5px; background:none; transform:scale(1.05);
                     filter: drop-shadow(0px 0px 10px rgb(44, 16, 154));z-index:1;}
-                #priviewimage2:hover{cursor:pointer; transition:1s; transform:scale(1.10);
+                #oldpriviewimage2:hover{cursor:pointer; transition:1s; transform:scale(1.10);
                     filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));} 
 
-                #priviewimage3{width:100%; background:black; padding:5px; background:none; 
+                #oldpriviewimage3{width:100%; background:black; padding:5px; background:none; 
                     filter: drop-shadow(0px 0px 10px rgb(44, 16, 154)) }
-                #priviewimage3:hover{cursor:pointer; transition:1.25s; transform:scale(1.15);
+                #oldpriviewimage3:hover{cursor:pointer; transition:1.25s; transform:scale(1.15);
                     filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));}
 
                     
     #research-div{}
         #gddseminar-div{}
+
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .dot{display:none;}
+    .h3{margin-bottom:2.5%;}
+    .project-title{color:rgb(255,255,255)}
+    .projectdescription-div{width:100%; margin-bottom: 10px;}
+    .projectdescription-div p{max-width:100%}
+    #inst326-div{margin-bottom:5%; display:block; width:100%;}
+    .insttitle-div p{margin-bottom: 8%;}
+    #gddtoolkit-div{margin-bottom:5%; display:block; width:100%;}
+    .gddtitle-div p{margin-bottom: 8%;}
+    #sdtoolsmain-div{margin-bottom:5%; display:block; width:100%;}
+    #priviewmain-div{margin-bottom:5%; display:block; width:100%;}
+    
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {...}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 600px) and (max-width: 768px) {
+
+    .dot{display:none;}
+    .h3{margin-bottom:2.5%;}
+    .project-title{color:rgb(255,255,255)}
+    .projectdescription-div{width:100%; margin-bottom: 10px;}
+    .projectdescription-div p{max-width:100%}
+    #inst326-div{margin-bottom:5%; display:block; width:100%;}
+    .insttitle-div p{margin-bottom: 8%;}
+    #gddtoolkit-div{margin-bottom:5%; display:block; width:100%;}
+    .gddtitle-div p{margin-bottom: 8%;}
+    #sdtoolsmain-div{margin-bottom:5%; display:block; width:100%;}
+    #priviewmain-div{margin-bottom:5%; display:block; width:100%;}
+    
+ }
+ 
+
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {...}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {...} 
