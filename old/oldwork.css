@@ -1,0 +1,85 @@
+*{font-family:"Barlow Semi Condensed"; margin:0; padding:0;}
+
+body{ background-color: rgb(0, 0, 0);}
+.container{width:100%; min-height:100vh;}
+
+nav{display:flex; width:100%; height:auto; line-height:70px; 
+  justify-content:space-between; background-color:rgb(10, 10, 10);
+  }
+
+.navContainer{width:20%; height:100%; margin:auto; display:flex; 
+  justify-content:space-between; align-items:center;}
+    
+    .home-div a{text-decoration:none;color:rgb(170, 170, 170);}
+    .home-div a:hover{cursor:pointer; color:rgb(220, 220, 220); transition:0.2s;}
+    .home-div p :hover{cursor:pointer; color:rgb(220, 220, 220); transition:0.2s;}
+
+    .contact-div{position:relative; display:inline-block;} 
+    .contact-div p{cursor:pointer; text-decoration:none; color:rgb(170, 170, 170);} 
+    .caret{color:rgb(170,170,170); display:inline-block; transform:rotate(180deg); transition: 0.2s ease-in-out;}
+
+    .contact-div:hover p{color:rgb(220,220,220); transition:0.2s;}
+    .contact-div:hover .caret{color:rgb(220,220,220); transform:rotate(0);} 
+
+
+    .contact-dropdown {display:none; position:absolute; line-height:40px; background-color:rgb(5,5,5);}
+    .contact-dropdown a{text-decoration:none; color:rgb(170, 170, 170); padding-left:3px;}
+
+    .contact-div:hover .contact-dropdown{display:block;}
+    .contact-dropdown a:hover{color:rgb(220,220,220); transition:0.1s;}
+
+  /* Projects */
+  .wrapper{width:100%; min-height:min-content; margin:auto; }
+
+  .main-content{
+    width:70%; height:30%; display:flex; 
+    margin:auto; margin-top:7%; margin-bottom:4%; 
+  }
+
+
+              .featuredWorkTitle{color:rgb(170,170,170); text-align:center; margin-bottom:5%; font-weight:bold;}
+
+
+              .featuredWork1Div{width:80%; height:30%; border-style: solid; margin:auto;}
+              .featuredWork1Title{color:rgb(215, 215, 215); margin-left:7.5%; margin-top:2.5%;}
+              .priviewimageDiv{width:90%; height:95%; display:flex; position:relative; margin:auto; justify-content:space-around;}
+              .priviewimage{width:100%; background:black; padding:5px; background:none; filter: drop-shadow(0px 0px 10px rgb(44, 16, 154)) }
+
+
+              .priviewimage1{width:100%; background:black; padding:5px; background:none; 
+                filter: drop-shadow(0px 0px 10px rgb(44, 16, 154)) }
+                .priviewimage1:hover{cursor:pointer; transition:1.25s; transform:scale(1.15);
+                  filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));} .priviewimage1Div{z-index:2;}
+                
+
+              .priviewimage2{width:100%; background:black; padding:5px; background:none; transform:scale(1.05);
+                filter: drop-shadow(0px 0px 10px rgb(44, 16, 154));z-index:1; }
+                .priviewimage2:hover{cursor:pointer; transition:1s; transform:scale(1.10);
+                  filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));} 
+
+
+              .priviewimage3{width:100%; background:black; padding:5px; background:none; 
+                filter: drop-shadow(0px 0px 10px rgb(44, 16, 154)) }
+                .priviewimage3:hover{cursor:pointer; transition:1.25s; transform:scale(1.15);
+                  filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));}
+
+
+              .priviewimage:hover{cursor:pointer; transition:0.6s; transform:scale(1.05);
+              filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));}
+
+              .priview-infoDiv{display:flex; margin-left:7.5%; margin-right:7.5%; margin-top:2.5%;}
+              .project1-title{width:50%; float:left; color:rgb(215, 215, 215); }
+              .project1-date{width:50%; float:right; text-align:right; color:rgb(215, 215, 215); }
+
+              
+              .featuredwork2Div{width:80%; height:30%; margin:auto; margin-top:7%; margin-bottom:7%;}
+              .eit-tools-imgDiv{width:85%; height:95%; margin:auto; }
+              .eit-tools-image{width: 100%; }
+              .eit-tools-textDiv p{color:rgb(215, 215, 215); margin-left:7.5%; margin-top:2.5%;}
+              .eit-tools-image:hover{cursor:pointer; transform: scale(1.05); transition:0.6s ease-in-out;}
+
+              .eit-tools-infoDiv{display:flex; margin-left:7.5%; margin-right:7.5%; margin-top:2.5%;}
+              .project2-title{width:50%; float:left; color:rgb(215, 215, 215); }
+              .project2-date{width:50%; float:right; text-align:right; color:rgb(215, 215, 215); }
+
+

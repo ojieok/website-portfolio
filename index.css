@@ -1,4 +1,4 @@
-*{background-color:black; color:rgb(255, 255, 255); font-family:"Rajdhani"; font-weight:200;
+*{background-color:rgb(0, 0, 0); color:rgb(175, 175, 176); font-family:"Rajdhani"; font-weight:200;
         margin:0; padding:0; font-size:16px;}
 
 body{margin-left:11%; margin-right:11%;}
@@ -23,17 +23,109 @@ main{margin-top:11%; margin-bottom:15%;}
         #links-div a{text-decoration:none; font-size: 18px; color:rgb(150,150,150); font-weight:400;}
         #links-div a:hover {cursor:pointer; color:rgb(225,225,225)}
 
-footer{}
-    @keyframes blink {
-        0%, 100%{opacity: 1;}
-        70%{opacity:0.25;}
-    }
-
+#transition{
     #mywork-div{text-align:center; width:max-content; margin:auto;}
-    #mywork-div p{font-size:16px; animation: blink 2s infinite;}
+    #mywork-div p{font-size:16px; color:rgb(126, 126, 126);}
+    
 
     #scrolldown-div{text-align:center; width:max-content; margin:auto;}
     #scrolldown-div p{font-size:20px; transform: rotate(180deg); animation: blink 2s infinite;}
+}
+
+    @keyframes blink {
+        0%, 100%{opacity: 0.8;}
+        70%{opacity:0.15;}
+    }
+
+
+                                /* Page 2*/
+
+#main2{margin-top:10%;}
+
+    #view-github{margin-bottom:5%; text-align: right;}
+    #view-github a{color:rgb(125,125,125); text-align:right; margin-bottom:2%; text-decoration:underline;}
+    #view-github a:hover{color:rgb(185,185,185); cursor:pointer;}
+
+    
+    #project-div{margin-bottom:5%; width:100%;}
+    .h3{font-size:25px; text-decoration:underline; margin-bottom:1%; font-weight:500}
+
+        #inst326-div{margin-bottom:5%; display: flex; width:100%;}
+        #inst326-div p{color:rgb(185, 185, 185); line-height:30px;}
+        .dot{}
+            .insttitle-div{margin-right:1%; margin-top:1%; width:150px;}
+            .insttitle-div p{font-size:18px; color:rgb(225,225,225)}
+            .github-view{font-size:14px; color:rgb(85, 85, 85);}
+            .github-view a{font-size:14px; color:rgb(85, 85, 85); text-decoration: none;}
+            .github-view a:hover{font-size:14px; color:rgb(100, 100, 100); text-decoration: underline;}
+
+            .projectdescription-div{width:75%;}
+            .projectdescription-div p{max-width:100%; box-sizing: border-box;}
+
+
+        #gddtoolkit-div{margin-bottom:5%; display:flex; width:100%;}
+        #gddtoolkit-div p{color:rgb(185, 185, 185); line-height: 30px;}
+            .gddtitle-div{margin-right:1%; margin-top:1%; width:240px;}
+            .gddtitle-div p{font-size:18px; color:rgb(225,225,225)}
+            #course{font-size:14px;}
+            
+
+
+        #sdtools-div{margin-bottom:6%; width:100%;}
+        #sdtools-div p{}
+            #sdtoolsmain-div{display:flex;}
+            #sdtoolsmain-div p{color:rgb(185,185,185); line-height: 30px;}
+                    .sdtitle-div{margin-right:1%; margin-top:1%; width:170px;}
+                    .sdtitle-div p{font-size:18px; color:rgb(225,225,225s)}
+                        #course{font-size:14px;}
+                    
+            #sdtoolsimg-div{margin-left:4%; width:100%;}
+                #sdimg{width:80%;}
+                #sdimg:hover{cursor:pointer; transform: scale(1.05); transition:1s ease-in-out;}
+
+
+        #priview-div{margin-bottom:12%; width:100%;}
+        #priview-div p{}
+            #priviewmain-div{display:flex; margin-bottom:20px; width:100%;}
+            #priviewmain-div p{color:rgb(185,185,185); line-height: 30px;}
+                .priviewtitle-div{margin-right:2.5px; margin-top:7.5px; width:80px;}
+                .priviewtitle-div p{font-size:18px;}
+                    #course{font-size:14px;}
+
+            #priviewimg-div{margin-left:25px; display:flex; width:90%;}
+
+                #oldpriviewimage1{width:100%; background:black; padding:5px; background:none;
+                    filter: drop-shadow(0px 0px 10px rgb(44, 16, 154));}
+                #oldpriviewimage1:hover{cursor:pointer; transition:1.25s; transform:scale(1.15);
+                    filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));} #priviewimage1Div{z-index:2;}
+            
+                #oldpriviewimage2{width:100%; background:black; padding:5px; background:none; transform:scale(1.05);
+                    filter: drop-shadow(0px 0px 10px rgb(44, 16, 154));z-index:1;}
+                #oldpriviewimage2:hover{cursor:pointer; transition:1s; transform:scale(1.10);
+                    filter: drop-shadow(0px 12px 30px rgb(44, 16, 154));} 
+
+                #oldpriviewimage3{width:100%; background:black; padding:5px; background:none; 
+                    filter: drop-shadow(0px 0px 10px rgb(44, 16, 154)) }
+                #oldpriviewimage3:hover{cursor:pointer; transition:1.25s; transform:scale(1.15);
+                    filter: drop-shadow(0px 12px 30px r
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  /* Extra small devices (phones, 600px and down) */
@@ -63,7 +155,7 @@ footer{}
     #links-div a {font-size: 18px;}
     #mywork-div p {font-size: 16px;}
     #scrolldown-div p {font-size: 18px;}
-
+ }
 
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {...}
